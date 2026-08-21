@@ -40,13 +40,34 @@ body {
 }
 
 .logo {
-    font-size: 22px;
-    font-weight: bold;
-    letter-spacing: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1;
 }
 
-.logo span {
+.logo-vartik {
+    font-size: 32px;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: #ef4444;
+}
+
+.logo-tech {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: #eab308;
+    margin-top: 2px;
+}
+
+.logo-tagline {
+    font-size: 12px;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 0.5px;
     color: #38bdf8;
+    margin-top: 3px;
 }
 
 nav {
@@ -229,6 +250,38 @@ nav a:hover {
 }
 
 
+/* About Us */
+
+.about-us {
+    margin-top: 80px;
+    max-width: 800px;
+}
+
+.about-us h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    color: #94a3b8;
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+.about-us .quote {
+    color: #38bdf8;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 18px;
+    border-left: 3px solid #38bdf8;
+    padding-left: 15px;
+}
+
+.about-us strong {
+    color: #e5e7eb;
+}
+
+
 /* Technology */
 
 .technology-section {
@@ -282,19 +335,48 @@ nav a:hover {
     background: #075985;
 }
 
-.contact-content {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
+.light-label {
+    color: #bae6fd;
 }
 
-.contact-content h2 {
+.contact-heading {
     font-size: 45px;
-    margin-bottom: 15px;
+    margin-bottom: 40px;
 }
 
-.contact-content p {
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-bottom: 45px;
+}
+
+.team-card {
+    background: rgba(2, 6, 23, 0.25);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.team-role {
+    color: #bae6fd;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 8px;
+}
+
+.team-card h3 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.team-email a {
+    color: white;
+    text-decoration: underline;
+}
+
+.team-email a:hover {
     color: #bae6fd;
 }
 
@@ -338,6 +420,10 @@ footer {
 
     .hero h1 {
         font-size: 55px;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
     }
 }
 
